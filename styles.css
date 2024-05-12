@@ -1,0 +1,348 @@
+/* Author: Shehan Seneviratne
+Date: 06 05 2024
+Version: 2.0 Assignment 2
+*/
+
+/*GLOBAL SETTING
+----------------------------------------
+*/
+
+/*IMPORT OPENSANS FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+
+
+body {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif; /*BACKUP FONT IS SANS-SERIF*/
+	color: black;
+	margin: 0;
+}
+
+#wrapper {
+	position: relative;
+	width: 1200px; 
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-weight: 700;
+}
+
+a {
+	color: blue; /* blue */
+}
+
+a:visited {
+	color: blueviolet; /* blue */
+}
+
+
+
+/* HEADER
+----------------------------------------
+*/
+
+header {
+	background: #ADD8E6 /*LIGHT BLUE*/	url(images/EllaS12new.jpg);
+    width: 1200px;
+	height: 800px;
+	color: #ffffff;	/*white*/
+}
+
+/*HIDE THE VISISBILITY OF THE HEADER */
+header h1 {
+	visibility: hidden;
+}
+
+/*ADJUSTS THE LOGO*/
+header img {
+	position: relative;
+	top: 20px; left: 20px;
+	z-index: 999;
+}
+
+#header-coastal {
+    background: #ADD8E6 /*LIGHT BLUE*/	url(images/M11Coastal.jpeg);
+}
+
+#header-upcountry {
+    background: #ADD8E6 /*LIGHT BLUE*/	url(images/S14Ellawoods.jpg);
+}
+
+#header-northern {
+    background: #ADD8E6 /*LIGHT BLUE*/	url(images/JafRailway.jpeg);
+}
+
+#header-aboutus {
+    background: #ADD8E6 /*LIGHT BLUE*/	url(images/classs14.jpg);
+
+}
+
+/* NAVIGATION
+----------------------------------------
+*/
+
+nav {
+	background-color: rgba(0,0,0,0.55);
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 100%; /* = 1200px */
+	padding-top: 45px;
+}
+
+/*ADJUSTS THE NAVIGATION LINKS*/
+nav a {
+	color: white; /* WHITE */
+	text-decoration: none;
+	padding: 10px 20px 15px 20px;
+}
+
+nav a:hover {
+	background-color: black;
+}
+
+nav a:visited {
+	color: white;
+}
+
+nav ul {
+	padding-left: 700px;
+    padding-bottom: 10px;
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+    font-size: 1.2em;
+}
+
+nav span {
+    padding: 10px 20px 15px 20px;
+	background-color: black; /*BLACK*/
+    color: #ffffff; /*WHITE*/
+}
+
+
+/* CONTENT 1
+----------------------------------------
+*/
+
+/*CLASS ID CREATED TO MODIFY THE INTRODUCTION IN CONTENT AREA 1 OF HOMEPAGE*/
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ADD8E6; /*LIGHT BLUE*/
+    color: black;
+    padding: 0px;
+    height: 800px;
+    font-size: 1.2em;
+    justify-content:center
+}
+
+#intro-content {
+    padding: 60px;
+    /*background-color: rgba(0,0,0,0.18);*/
+}
+
+#intro h2 {
+    color: black;
+    font-family: 'Caveat';
+    font-size: 65px;
+}
+
+#intro p {
+    font-size: 26px;
+}
+/*CONTENT AREA OF RAIL MAP-PAGE*/
+#map-container {
+    display: flex;
+    flex-direction: row; 
+}
+
+#map-container section{
+    background-color: #ADD8E6; /*LIGHT BLUE*/
+    color: black;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#map-container section h2{
+    font-size: 1.9em;
+    color: black;
+}
+
+#section-one {
+    margin-right: 20px;  
+}
+
+/* CONTENT 2
+----------------------------------------
+*/
+
+/*CLASS ID CREATED TO MODIFY THE SECTIONS IN CONTENT AREA 2 IN HOMEPAGE*/
+#guidance {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    text-align: center;
+    background: url(images/classS12-ella-preset.jpg);
+    height: 420px;
+    padding: 60px 0px;
+    
+}
+
+/*DESCEDENT SELECTOR TO MODIFY EACH SECTION IN HOMEPAGE*/
+#guidance section {
+    width: 3000px;
+    height: 230px;
+    padding: 60px 20px;
+    margin: 30px;
+    color: white;
+    background-color: rgba(0,0,0,0.65);
+    font-size: 1.1em;
+}
+
+/*MODIFICATIONS ON LINKS IN SECTIONS IN CONTENT AREA 2 HOMEPAGE*/
+#guidance section a {
+   color: skyblue; /*WHITE*/
+   text-decoration: none;
+   font-family: 'Caveat';
+   font-size: 1.8em;
+}
+
+#guidance section a:visited {
+    color: skyblue;  /*WHITE*/
+    text-decoration: none;
+    font-family: 'Caveat';
+}
+
+
+#guidance section a:hover {
+    text-decoration:underline;
+} 
+
+
+/* UP COUNTRY / COASTAL / NORTHERN 
+----------------------------------------
+*/
+#body-adjustments {
+    padding-bottom: 50px;
+    font-size: 1.1em;
+}
+
+.ticket-section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.MLsection-colour {
+    background-color: #A6A160; /*OLIVE*/
+}
+
+.CLsection-colour {
+    background-color: #B6E1F2; /*SEA BLUE*/
+}
+
+.NLsection-colour {
+    background-color: #F2E1AE; /*IVORY*/
+}
+
+.para-adjustment {
+    padding: 25px;
+    align-self: flex-end;
+    margin: 40px 40px 0px 40px;
+    font-size: 1.2em;
+    border-radius: 20px 20px 0 0; 
+}
+
+.MLpara-adjustment-colour {
+    background-color: #F29B88 /*PEACH*/;
+}
+
+.CLpara-adjustment-colour {
+    background-color: #F2E1AE /*IVORY*/;
+}
+
+.NLpara-adjustment-colour {
+    background-color: #B6E1F2 /*SEA BLUE*/;
+}
+
+
+.heading-modification {
+    font-family: Caveat;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+.rounded-image {
+    border-radius: 10px; /* Adjust the pixel value to change the amount of rounding */
+  }
+/* ABOUT US PAGE
+----------------------------------------
+*/
+#aboutus-container  {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 70px;
+}
+
+#aboutus-verticle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    margin: 10px 0px 10px 10px;
+    background-color: #F29B88; /*LIGHT BLUE*/
+}
+
+#our-location {
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-bottom: 40px;
+    margin: 10px 0px 10px 0px;
+    background-color: #B0D1D9; /*LIGHT BLUE*/
+}
+
+
+/* FOOTER
+----------------------------------------
+*/
+
+footer {
+	background-color: rgba(0,0,0,0.45);
+    color: white;
+	position: absolute;
+	bottom: 0px; 
+	width: 100%; /* = 1200px */
+	padding: 1px;
+}
+
+#footer-container{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#footer-container a {
+    color: white;
+}
+
+#footer-container a:visited {
+    color: white;
+}
